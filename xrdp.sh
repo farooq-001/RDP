@@ -18,7 +18,7 @@ echo "xfce4-session" > ~/.xsession
 
 # Configure XRDP to use Xfce by editing startwm.sh
 echo "Configuring XRDP to use Xfce..."
-sudo sed -i 's/^\. \/etc\/X11\/Xsession/startxfce4/' /etc/xrdp/startwm.sh
+echo "startxfce4" > /etc/xrdp/startwm.sh
 
 # Restart XRDP service
 echo "Restarting XRDP service..."
